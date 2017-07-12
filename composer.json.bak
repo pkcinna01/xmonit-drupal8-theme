@@ -1,0 +1,16 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "name": "drupal/xmonit",
+  "type": "drupal-theme",
+  "description": "A Drupal 8 Theme for XMonit website using Bootstrap framework.",
+  "homepage": "http://drupal.org/project/xmonit",
+  "license": "GPL-2.0",
+  "require": {
+    "drupal/bootstrap": "^3.2"
+  }
+}
