@@ -120,6 +120,8 @@ ol ul {
 }
 
 li {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 ul li {
@@ -461,11 +463,25 @@ img {
 
 /************************** MESSAGE BOX *************************/
 .message-box {
-  margin-bottom: 15px;
-  background: rgb(247, 247, 247) none repeat scroll 0% 0%;
-  border: 1px solid rgb(234, 234, 234);
-  padding: 12px 15px;
-  font-weight: 600;
+  display:table;
+  width:100%;
+  padding:7px 5px 5px 2px;
+  border-left:solid 9px;
+}
+
+.message-box div {
+  display:table-cell;
+  vertical-align:middle;
+  border:none;
+}
+.message-box-icon {
+  padding:0 10px;
+  font-size:26px;
+  width:32px;
+  text-align:center;
+} 
+.message-box-list {
+  padding:5px;
 }
 
 .feed-icon {
@@ -601,7 +617,12 @@ article ul.contextual-links li:before,
 #user-login-form [type="password"] {
   width: 50%;
 }
-
+.list-no-style {
+  list-style: none;
+}
+.main-container {
+  padding-top: 14px;
+}
 .main-container aside {
   font-size: 12px;
 }
@@ -705,7 +726,7 @@ article ul.contextual-links li:before,
 }
 
 .view-content .views-row .page-header {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .view-content .views-row:first-of-type .page-header {
@@ -866,6 +887,8 @@ section .indented {
 
 .field--name-field-tags {
   margin-bottom: 15px;
+  font-size: 11px;
+  opacity: 0.85;
 }
 
 .field--name-field-tags .field--label,
@@ -1635,12 +1658,12 @@ a.tabledrag-handle,
 
 .page-header {
   margin: 2px 0px 12px 0px;
-  padding-bottom: 18px;
   border-bottom: 1px solid #ccc;
 }
 
 h1.page-header {
   margin-bottom: 2px;
+  padding-bottom: 12px;
 }
 .view-content .views-row .page-header {
   margin-top: 25px;
@@ -1649,8 +1672,7 @@ h1.page-header {
   margin-bottom: 0px;
 }
 h2.page-header {
-  padding-top: 14px;
-  margin-top: 25px;
+  padding: 12px 0;
   margin-bottom: 2px;
 }
 
