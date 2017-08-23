@@ -3,7 +3,10 @@ global-styling:
     theme:
       css/style.css: {}
       css/responsive.css: {}
-
+  js:
+    js/xmonit.js: {}
+  dependencies:
+    - core/jquery
 open-sans:
   css:
     theme:

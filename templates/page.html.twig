@@ -79,8 +79,12 @@
       %}
 
       {% if page.navigation %}
-        <div {{ navbar_attributes.addClass(navbar_classes) }}>
-          {{ page.navigation }}
+        <div class="nav-wrapper">
+          <div {{ navbar_attributes.addClass(navbar_classes) }}>
+            {{ page.navigation }}
+          </div>
+        </div>
+        <div id='navigation-spacer'>
         </div>
       {% endif %}
       {% if page.navigation_collapsible %}

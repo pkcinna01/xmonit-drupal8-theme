@@ -3,11 +3,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Ubuntu, sans-serif;
 }
 
 body,
@@ -35,26 +35,27 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 600;
+  text-transform: none;
+  color: darkslategray;
 }
 
 h1 {
-  font-size: 2.7rem;
+  font-size: 2.8rem;
 }
 
 h2 {
-  font-size: 2.1rem;
+  font-size: 2.5rem;
 }
 
 h3,
 .block-title,
 .footer h2 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 h5 {
@@ -92,13 +93,13 @@ blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 18px;
   border-left: 5px solid #eee;
-  font-size: 13px;
+  font-size: 14px;
   color: #666;
 }
 
 blockquote p {
   margin-bottom: 0;
-  font-size: 13px;
+  font-size: 14px;
   color: #666;
 }
 
@@ -158,7 +159,7 @@ input[type="color"],
   height: 32px;
   padding: 4px 6px;
   margin-bottom: 9px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
   color: #555;
   border-radius: 3px;
@@ -254,15 +255,10 @@ textarea {
 
 .section-header,
 .footer,
-.navigation-wrapper,
 .content-top,
 .content-top {
   margin: 0;
   padding: 0;
-}
-
-.navigation-wrapper + div {
-  clear: both;
 }
 
 .section-header {
@@ -290,14 +286,15 @@ textarea {
   margin:0;
 }
 .section-header .navbar-brand a {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 38px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
   height: 45px;
   line-height: 45px;
 }
 .section-header .navbar-text {
   font-style: italic;
+  font-size:12px;
   display: block;
   padding: 0;
   margin: 5px 0 0 12px;
@@ -370,6 +367,8 @@ img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 10px;
   float: left;
   width: 100%;
@@ -403,11 +402,11 @@ img {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   -o-border-radius: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .navigation nav ul> li ul.dropdown-menu a {
-  font-size: 13px;
+  font-size: 14px;
   padding: 3px 20px;
 }
 
@@ -624,7 +623,7 @@ article ul.contextual-links li:before,
   padding-top: 14px;
 }
 .main-container aside {
-  font-size: 12px;
+  font-size: 13px;
 }
 .user-login-form .form-item-name::before {
   content: "\e008";
@@ -886,7 +885,7 @@ section .indented {
 /******************************* TAGS *******************************/
 
 .field--name-field-tags {
-  margin-bottom: 15px;
+  margin: 14px 0;
   font-size: 11px;
   opacity: 0.85;
 }
@@ -906,22 +905,28 @@ section .indented {
 }
 
 .field--name-field-tags .field__items .field--item > a {
-  background-color: #1782d0;
+  background-color: rgb(247, 247, 247);
+  border: solid 1px rgb(231,231,231);
   display: inline;
-  padding: .2em .6em .3em;
+  padding: .25em .65em .35em;
   font-size: 100%;
   line-height: 1;
-  color: #fff;
+  color: rgb(23,130,208);
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em;
+  border-radius: .3em;
 }
 
+article > div.node-content > ul > li.node-readmore > a,
+article > div.node-content > ul > li.comment-add > a {
+  font-size: smaller;
+}
 .field--name-field-tags .field__items .field--item > a:hover,
 .field--name-field-tags .field__items .field--item > a:focus,
 .field--name-field-tags .field__items .field--item > a:active {
-  background-color: #286090;
+  background-color: rgb(203, 212, 220);
+  border-color: rgb(190,190,190);
 }
 
 /******************************* BUTTON DESIGN *******************************/
@@ -1662,7 +1667,7 @@ a.tabledrag-handle,
 }
 
 h1.page-header {
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   padding-bottom: 12px;
 }
 .view-content .views-row .page-header {
@@ -1777,4 +1782,6 @@ li.action-links + table {
   background: none;
   background-color: transparent;
 }
+
+
 
